@@ -1,9 +1,3 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
-
-// 默认 .page-header 顶部 margin 是 $topSpacing(6rem≈96px),视觉上留白过大,
-// 缩减为 2rem,保留适度呼吸感。用 :where 保持零特异性,便于后续覆盖。
-.page:has(.page-header) .page-header {
-  margin-top: 2rem;
-}
